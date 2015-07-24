@@ -12,15 +12,13 @@ make README.coffee.md
 ## Installation
 
 ```
-npm install underscore
-npm install underscore.deep
+meteor add gfk:underscore-deep
 ```
 
 ## Usage
-
+All methods are mixed in to _ by this package. So example use:
 ```
-_ = require 'underscore'
-_.mixin require 'underscore.deep'
+_.deepToFlat()
 ```
 
 ## Functions

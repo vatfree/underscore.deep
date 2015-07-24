@@ -1,10 +1,5 @@
-assert = require 'assert'
-_ = require('underscore')
-_.mixin require('../underscore.deep.js')
-h = require './helpers'
-
 describe '_.deepKeys', ->
-  h.it_throws_on_non_objects _.deepKeys
+  it_throws_on_non_objects _.deepKeys
 
   _.each [
     [{}                                     , []]

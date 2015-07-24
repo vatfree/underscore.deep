@@ -1,11 +1,6 @@
-assert = require 'assert'
-_ = require('underscore')
-_.mixin require('../underscore.deep.js')
-h = require './helpers'
-
 describe '_.deepOmit', ->
 
-  h.it_throws_on_non_objects (input) -> _.deepOmit input, []
+  it_throws_on_non_objects (input) -> _.deepOmit input, []
 
   _.each [
     [{},                      ['a'],            {}]

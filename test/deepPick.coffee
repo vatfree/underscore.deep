@@ -1,8 +1,3 @@
-assert = require 'assert'
-_ = require('underscore')
-_.mixin require('../underscore.deep.js')
-h = require './helpers'
-
 permutations = (arr) ->
   if _.isEmpty arr
     [[]]
@@ -14,7 +9,7 @@ permutations = (arr) ->
 
 describe '_.deepPick', ->
 
-  h.it_throws_on_non_objects (input) -> _.deepPick input, []
+  it_throws_on_non_objects (input) -> _.deepPick input, []
 
   _.each [
     [{},                      ['a'],            {}]

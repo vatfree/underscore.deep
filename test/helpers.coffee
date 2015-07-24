@@ -1,9 +1,4 @@
-assert = require 'assert'
-_ = require 'underscore'
-{inspect} = require 'util'
-
-module.exports =
-  it_throws_on_non_objects: (fn) ->
+  @it_throws_on_non_objects = (fn) ->
     _.each [
       undefined
       null

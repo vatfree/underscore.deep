@@ -1,8 +1,3 @@
-assert = require 'assert'
-{inspect} = require 'util'
-_ = require('underscore')
-_.mixin require('../underscore.deep.js')
-
 describe 'deep_extend', ->
   test_obj =
     a: 1
