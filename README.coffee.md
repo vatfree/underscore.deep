@@ -1,4 +1,4 @@
-# underscore.deep
+# underscore.deep [![Build Status](https://travis-ci.org/gfk-ba/underscore.deep.svg?branch=master)](https://travis-ci.org/gfk-ba/underscore.deep)
 
 Underscore.deep is a collection of Underscore mixins that operate on nested
 objects.
