@@ -208,6 +208,16 @@ Takes an object and a list of dot-notation keys and returns a new object with on
             vegetables:
               banana: true
 
+### _.deepPickValue(obj, key)
+
+Takes an object and a string of a dot-notation key and returns the value of that nested key. If you pick a key that has a subobject below it, the entire subobject will be returned, regardless of whether its subkeys are also picked.
+
+    describe '_.deepPickValue', ->
+
+      it 'returns an object with only the given keys', ->
+        assert.deepEqual _.deepPickValue(foods, 'fruit.carrot']),
+          true
+
 ### _.deepExtend(destination, source, mutate = false)
 
 Takes an object `destination` and an object `source` and creates a new object with all the deep fields of `destination` and all the deep fields of `source`. Any deep fields with the same deep key in `destination` and `source` will have the value from `source` (so `source` fields overwrite `destination` fields).

@@ -158,4 +158,11 @@ _.mixin(
     unless isPlainObject obj
       throw new Error "mapKeys must be called on an object, not '#{obj}'"
     _.object _.map(obj, (v,k) -> f_val k,v), _.values obj
+
+  deepPickValue: deepPickValue = (object, props) ->
+    if _.isString(props)
+      props = props.split('.')
+    while props.length > 0 and _.isObject(object)
+      object = object[props.shift()]
+    if props.length == 0 then object else undefined
 )
