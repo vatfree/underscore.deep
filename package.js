@@ -7,7 +7,7 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom(["2"]);
+  api.versionsFrom(["2.0"]);
   api.use(["underscore", "coffeescript@2.4.1"]);
 
   api.addFiles("underscore.deep.coffee");
