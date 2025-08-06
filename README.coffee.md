@@ -215,7 +215,7 @@ Takes an object and a string of a dot-notation key and returns the value of that
     describe '_.deepPickValue', ->
 
       it 'returns an object with only the given keys', ->
-        assert.deepEqual _.deepPickValue(foods, 'fruit.carrot']),
+        assert.deepEqual _.deepPickValue(foods, 'fruit.carrot'),
           true
 
 ### _.deepExtend(destination, source, mutate = false)
